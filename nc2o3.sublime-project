@@ -1,0 +1,15 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.dill",
+				"*.meta"
+			],
+			"name" : "nc2o3",
+			"path" : "Assets"
+		},
+	],
+	"solution_file" : "./nc2o3.sln"
+}
