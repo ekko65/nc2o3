@@ -7,9 +7,9 @@
 				"*.dill",
 				"*.meta"
 			],
-			"name" : "nc2o3",
-			"path" : "Assets"
-		},
+			"name": "nc2o3",
+			"path": "Assets"
+		}
 	],
-	"solution_file" : "./nc2o3.sln"
+	"solution_file": "./nc2o3.sln"
 }
