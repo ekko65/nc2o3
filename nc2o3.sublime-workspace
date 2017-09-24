@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"getcom",
+				"getComponent\tComponent.*(type)"
+			],
+			[
+				"trans",
+				"transform\tGameObject.*"
+			],
+			[
 				"Getcom",
 				"GetComponent\tGameObject.*<T>()"
 			],
@@ -36,7 +44,7 @@
 			"file": "Assets/script/CharacterMove.cs",
 			"settings":
 			{
-				"buffer_size": 551,
+				"buffer_size": 1036,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Unix"
 			}
@@ -124,7 +132,7 @@
 	],
 	"find":
 	{
-		"height": 70.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -183,7 +191,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 108.0,
+						"translation.y": 918.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -195,15 +203,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 551,
+						"buffer_size": 1036,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								531,
-								531
+								1008,
+								1008
 							]
 						],
 						"settings":
