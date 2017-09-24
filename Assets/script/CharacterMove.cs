@@ -6,6 +6,7 @@ public class CharacterMove : MonoBehaviour {
     public TouchWhere TouchWhere;
     public string left_right;
     public bool bHold;
+
     void Awake() {
         TouchWhere = TouchCamera.GetComponent<TouchWhere>();
     }
@@ -17,12 +18,24 @@ public class CharacterMove : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         bHold = TouchWhere.bHold;
-        Debug.Log(bHold);
         if (bHold == true){
-            Debug.Log(123);
             left_right = TouchWhere.left_right;
-            Debug.Log(left_right);
+            moveY(left_right);
         }
-
     }
+        /**
+     * 角色移動
+     * @param  {[type]} _whichSide [description]
+     * @return {[type]}            [description]
+     */
+    int moveY(string _whichSide){
+        // nowVector = GetComponent.Position;
+        if (_whichSide == "left"){
+            transform.position += Vector3.left*Time.deltaTime*2;
+        } else if (_whichSide == "right"){
+            transform.position += Vector3.right*Time.deltaTime*2;
+        }
+        return 0;
+    }
+
 }

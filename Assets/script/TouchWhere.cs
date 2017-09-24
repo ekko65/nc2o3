@@ -71,7 +71,6 @@ public class TouchWhere : MonoBehaviour {
             // Debug.Log(Input.mousePosition);
             Vector2 pos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
             HandDirection(pos);
-            // Debug.Log(left_right);
         } else {
             bHold = false;
         }

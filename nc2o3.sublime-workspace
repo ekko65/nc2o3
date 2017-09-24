@@ -3,28 +3,51 @@
 	{
 		"selected_items":
 		[
+			[
+				"Getcom",
+				"GetComponent\tGameObject.*<T>()"
+			],
+			[
+				"deb",
+				"debug\t[class]"
+			],
+			[
+				"Game",
+				"GameObject\t[class]"
+			],
+			[
+				"true",
+				"true"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"contents": "using UnityEngine;\nusing System.Collections;\n/**\n * 空間函式定義\n */\npublic class gDefine\n{\n    public enum Direction\n    {\n\n        over,\n        Left,\n        Right\n    }\n}\n/**\n * 主程式\n * TouchWhere 判斷按住哪個位置\n *\n */\npublic class TouchWhere : MonoBehaviour {\n    private Vector2 m_screenPos = new Vector2();\n    public string left_right;\n    public bool doit=false;\n    /**\n     * 形同construct\n     *\n     */\n    void Start () {\n\n    }\n    /**\n     * 不停偵測\n     */\n    void Update() {\n\n        #if UNITY_EDITOR || UNITY_STANDALONE\n                MouseInput();   // 滑鼠偵測\n        #elif UNITY_ANDROID\n                MobileInput();  // 觸碰偵測\n        #endif\n    }\n\n    /**\n     * 手機輸入\n     */\n    void MobileInput() {\n        if (Input.touchCount <= 0) {\n            left_right = (\"nothing\");\n            doit = false;\n            return;\n        }\n        //1個手指觸碰螢幕\n            //開始觸碰\n            if (Input.touches[0].phase == TouchPhase.Began) {\n                Debug.Log(\"Began\");\n            //紀錄觸碰位置\n                if (720 >( Input.touches[0].position.x) && (Input.touches[0].position.x) > 0) {\n                    if (305> (Input.touches[0].position.y) && (Input.touches[0].position.y) > 160) {\n                        m_screenPos = Input.touches[0].position;\n                    }\n                }\n                m_screenPos = Input.touches[0].position;\n                //手指移動\n            }\n            //手指離開螢幕\n            if (Input.touches[0].phase == TouchPhase.Ended || Input.touches[0].phase == TouchPhase.Canceled) {\n                Debug.Log(\"Ended\");\n                Vector2 pos = Input.touches[0].position;\n                gDefine.Direction mDirection = HandDirection(m_screenPos, pos);\n                Debug.Log(\"mDirection: \" + mDirection.ToString());\n            }\n            //攝影機縮放，如果1個手指以上觸碰螢幕\n    }\n    /**\n     * 滑鼠按下去的\n     */\n    void MouseInput() {\n        if (Input.GetMouseButtonDown(0))\n        {\n            if (720 > (Input.mousePosition.x) && (Input.mousePosition.x) > 0)\n            {\n                if (305> (Input.mousePosition.y) && (Input.mousePosition.y) > 160)\n                {\n                    m_screenPos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);\n                }\n            }\n            Debug.Log(\"hold\");\n        } else {\n            left_right = (\"nothing\");\n            doit = false;\n        }\n        if (Input.GetMouseButtonUp(0))\n        {\n            Vector2 pos = new Vector2(Input.mousePosition.x, Input.mousePosition.y);\n\n            gDefine.Direction mDirection = HandDirection(m_screenPos, pos);\n            Debug.Log(\"mDirection: \" + mDirection.ToString());\n        }\n    }\n\n    gDefine.Direction HandDirection(Vector2 StartPos, Vector2 EndPos) {\n        gDefine.Direction mDirection;\n\n        //手指水平移動\n        if (Mathf.Abs(StartPos.x - EndPos.x) > Mathf.Abs(StartPos.y - EndPos.y)) {\n            if (StartPos.x > EndPos.x) {\n                //手指向左滑動\n                mDirection = gDefine.Direction.Left;\n                left_right = (\"left\");\n                doit = true;\n            } else {\n                //手指向右滑動\n                mDirection = gDefine.Direction.Right;\n\n                left_right = (\"right\");\n                doit = true;\n            }\n        } else {\n            mDirection = gDefine.Direction.over;\n            left_right = (\"nothing\");\n            doit = true;\n        }\n        return mDirection;\n    }\n\n}",
 			"file": "Assets/script/TouchWhere.cs",
-			"file_size": 3660,
-			"file_write_time": 131506283656032886,
 			"settings":
 			{
-				"buffer_size": 3406,
+				"buffer_size": 3411,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/script/CharacterMove.cs",
+			"settings":
+			{
+				"buffer_size": 551,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "nc2o3.sublime-project",
+			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 169,
-				"line_ending": "Unix"
+				"buffer_size": 13,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -44,6 +67,10 @@
 				"Package Control: Install Package"
 			],
 			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
 				"instal",
 				"Package Control: Install Package"
 			],
@@ -60,7 +87,7 @@
 				"Install Package Control"
 			]
 		],
-		"width": 512.0
+		"width": 435.0
 	},
 	"console":
 	{
@@ -81,13 +108,15 @@
 	"expanded_folders":
 	[
 		"/C/Users/SONY/Documents/nc2o3/Assets",
-		"/C/Users/SONY/Documents/nc2o3/Assets/script"
+		"/C/Users/SONY/Documents/nc2o3/Assets/script",
+		"/C/Users/SONY/Documents/nc2o3/Assets/stage",
+		"/C/Users/SONY/Documents/nc2o3/Assets/stage/yishuan"
 	],
 	"file_history":
 	[
+		"/C/Users/SONY/Documents/nc2o3/nc2o3.sublime-project",
 		"/C/Users/SONY/Documents/nc2o3/Assets/script/test.html",
 		"/C/Users/SONY/Documents/nc2o3/.gitignore",
-		"/C/Users/SONY/Documents/nc2o3/nc2o3.sublime-project",
 		"/C/Users/SONY/AppData/Roaming/Sublime Text 3/Packages/User/trailing_spaces.sublime-settings",
 		"/C/Users/SONY/Documents/nc2o3/Assets/script/mainCamera.cs",
 		"/C/Users/SONY/Downloads/expressway.ttf",
@@ -109,6 +138,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"m_screenPos"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -126,7 +156,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -135,15 +165,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3406,
+						"buffer_size": 3411,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								835,
-								835
+								520,
+								520
 							]
 						],
 						"settings":
@@ -153,39 +183,67 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 594.0,
+						"translation.y": 108.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "nc2o3.sublime-project",
+					"file": "Assets/script/CharacterMove.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 169,
+						"buffer_size": 551,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								169,
-								169
+								531,
+								531
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (Sublime).sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13,
+								13
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
