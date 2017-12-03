@@ -25,11 +25,11 @@ public class TouchWhere : MonoBehaviour {
      * 不停偵測
      */
     void Update() {
-        #if UNITY_EDITOR || UNITY_STANDALONE
+        // #if UNITY_EDITOR || UNITY_STANDALONE
             MouseInput();   // 滑鼠偵測
-        #elif UNITY_ANDROID
-            MobileInput();  // 觸碰偵測
-        #endif
+        // #elif UNITY_ANDROID
+            // MobileInput();  // 觸碰偵測
+        // #endif
     }
     /**
      * 手機輸入
@@ -83,9 +83,9 @@ public class TouchWhere : MonoBehaviour {
          * @param  {Vector} _vTouchPos.x > 650 大於650是右邊
          * @return {0}
          */
-        if (Mathf.Abs(_vTouchPos.x) < 250){
+        if (Mathf.Abs(_vTouchPos.x) < 384){
             left_right = ("left");
-        } else if (Mathf.Abs(_vTouchPos.x) > 650){
+        } else if (Mathf.Abs(_vTouchPos.x) > 896){
             left_right = ("right");
         } else{
             left_right = ("middle");

@@ -29,7 +29,6 @@ public class CharacterMove : MonoBehaviour {
      * @return {[type]}            [description]
      */
     int moveY(string _whichSide){
-        // nowVector = GetComponent.Position;
         if (_whichSide == "left"){
             transform.position += Vector3.left*Time.deltaTime*2;
         } else if (_whichSide == "right"){
