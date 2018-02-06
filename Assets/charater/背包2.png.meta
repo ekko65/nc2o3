@@ -1,0 +1,647 @@
+fileFormatVersion: 2
+guid: a2f7c57f7443d3e42985fd199f5f608d
+timeCreated: 1513699369
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: "\u80CC\u53052_0"
+    21300002: "\u80CC\u53052_1"
+    21300004: "\u80CC\u53052_2"
+    21300006: "\u80CC\u53052_3"
+    21300008: "\u80CC\u53052_4"
+    21300010: "\u80CC\u53052_5"
+    21300012: "\u80CC\u53052_6"
+    21300014: "\u80CC\u53052_7"
+    21300016: "\u80CC\u53052_8"
+    21300018: "\u80CC\u53052_9"
+    21300020: "\u80CC\u53052_10"
+    21300022: "\u80CC\u53052_11"
+    21300024: "\u80CC\u53052_12"
+    21300026: "\u80CC\u53052_13"
+    21300028: "\u80CC\u53052_15"
+    21300030: "\u80CC\u53052_16"
+    21300032: "\u80CC\u53052_17"
+    21300034: "\u80CC\u53052_18"
+    21300036: "\u80CC\u53052_19"
+    21300038: "\u80CC\u53052_20"
+    21300040: "\u80CC\u53052_21"
+    21300042: "\u80CC\u53052_22"
+    21300044: "\u80CC\u53052_23"
+    21300046: "\u80CC\u53052_24"
+    21300048: "\u80CC\u53052_25"
+    21300050: "\u80CC\u53052_26"
+    21300052: "\u80CC\u53052_27"
+    21300054: "\u80CC\u53052_28"
+    21300056: "\u80CC\u53052_29"
+    21300058: "\u80CC\u53052_30"
+    21300060: "\u80CC\u53052_31"
+    21300062: "\u80CC\u53052_32"
+    21300064: "\u80CC\u53052_33"
+    21300066: "\u80CC\u53052_34"
+    21300068: "\u80CC\u53052_35"
+    21300070: "\u80CC\u53052_36"
+    21300072: "\u80CC\u53052_37"
+    21300074: "\u80CC\u53052_38"
+    21300076: "\u80CC\u53052_39"
+    21300078: "\u80CC\u53052_40"
+    21300080: "\u80CC\u53052_41"
+    21300082: "\u80CC\u53052_42"
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "\u80CC\u53052_0"
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 2053
+        width: 252
+        height: 437
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_1"
+      rect:
+        serializedVersion: 2
+        x: 2087
+        y: 2387
+        width: 237
+        height: 393
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_2"
+      rect:
+        serializedVersion: 2
+        x: 2670
+        y: 2387
+        width: 323
+        height: 333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_3"
+      rect:
+        serializedVersion: 2
+        x: 3314
+        y: 2343
+        width: 216
+        height: 333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_4"
+      rect:
+        serializedVersion: 2
+        x: 3767
+        y: 2361
+        width: 239
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_5"
+      rect:
+        serializedVersion: 2
+        x: 4260
+        y: 2171
+        width: 257
+        height: 320
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_6"
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 1952
+        width: 312
+        height: 310
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_7"
+      rect:
+        serializedVersion: 2
+        x: 2259
+        y: 1991
+        width: 318
+        height: 273
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_8"
+      rect:
+        serializedVersion: 2
+        x: 3256
+        y: 1848
+        width: 310
+        height: 380
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_9"
+      rect:
+        serializedVersion: 2
+        x: 3584
+        y: 2191
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_10"
+      rect:
+        serializedVersion: 2
+        x: 3749
+        y: 1895
+        width: 288
+        height: 398
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_11"
+      rect:
+        serializedVersion: 2
+        x: 2788
+        y: 1913
+        width: 263
+        height: 270
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_12"
+      rect:
+        serializedVersion: 2
+        x: 3064
+        y: 2148
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_13"
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 1504
+        width: 247
+        height: 401
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_15"
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 1581
+        width: 311
+        height: 319
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_16"
+      rect:
+        serializedVersion: 2
+        x: 3683
+        y: 1850
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_17"
+      rect:
+        serializedVersion: 2
+        x: 3749
+        y: 1509
+        width: 369
+        height: 357
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_18"
+      rect:
+        serializedVersion: 2
+        x: 4215
+        y: 1485
+        width: 270
+        height: 435
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_19"
+      rect:
+        serializedVersion: 2
+        x: 4590
+        y: 1496
+        width: 269
+        height: 388
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_20"
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1223
+        width: 242
+        height: 338
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_21"
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 1418
+        width: 315
+        height: 377
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_22"
+      rect:
+        serializedVersion: 2
+        x: 2413
+        y: 1400
+        width: 223
+        height: 296
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_23"
+      rect:
+        serializedVersion: 2
+        x: 2798
+        y: 1353
+        width: 289
+        height: 396
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_24"
+      rect:
+        serializedVersion: 2
+        x: 3189
+        y: 1353
+        width: 411
+        height: 401
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_25"
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 1047
+        width: 315
+        height: 337
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_26"
+      rect:
+        serializedVersion: 2
+        x: 1537
+        y: 1062
+        width: 344
+        height: 322
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_27"
+      rect:
+        serializedVersion: 2
+        x: 1999
+        y: 1295
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_28"
+      rect:
+        serializedVersion: 2
+        x: 2087
+        y: 975
+        width: 395
+        height: 385
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_29"
+      rect:
+        serializedVersion: 2
+        x: 3782
+        y: 944
+        width: 345
+        height: 424
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_30"
+      rect:
+        serializedVersion: 2
+        x: 4288
+        y: 1009
+        width: 369
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_31"
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 676
+        width: 223
+        height: 422
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_32"
+      rect:
+        serializedVersion: 2
+        x: 2603
+        y: 1046
+        width: 466
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_33"
+      rect:
+        serializedVersion: 2
+        x: 3202
+        y: 853
+        width: 289
+        height: 377
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_34"
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 535
+        width: 242
+        height: 354
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_35"
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 512
+        width: 238
+        height: 359
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_36"
+      rect:
+        serializedVersion: 2
+        x: 2277
+        y: 580
+        width: 378
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_37"
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 650
+        width: 304
+        height: 388
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_38"
+      rect:
+        serializedVersion: 2
+        x: 3621
+        y: 592
+        width: 437
+        height: 334
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_39"
+      rect:
+        serializedVersion: 2
+        x: 4176
+        y: 556
+        width: 381
+        height: 315
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_40"
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 184
+        width: 367
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_41"
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 275
+        width: 322
+        height: 307
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "\u80CC\u53052_42"
+      rect:
+        serializedVersion: 2
+        x: 3202
+        y: 296
+        width: 304
+        height: 307
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -3,9 +3,6 @@ using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class gotoselect : MonoBehaviour {
-    // void OnMouseDown() {
-    //     Debug.Log("123");
-    // }
 
     void OnMouseUp() {
         StartCoroutine(LoadYourAsyncScene());
