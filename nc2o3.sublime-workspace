@@ -88,77 +88,14 @@
 	"buffers":
 	[
 		{
-			"file": "Assets/menu/quitgame.cs",
+			"contents": "using UnityEngine;\nusing System.Collections;\n\npublic class CharacterMove : MonoBehaviour {\n    public GameObject TouchCamera;\n    public GameObject character;\n    public TouchWhere TouchWhere;\n    public string left_right;\n    public bool bHold;\n    private Animator animator;\n\n    void Awake() {\n        TouchWhere = TouchCamera.GetComponent<TouchWhere>();\n        animator = character.GetComponent<Animator>();\n    }\n    // Use this for initialization\n    void Start () {\n\n    }\n\n    // Update is called once per frame\n    void Update () {\n        bHold = TouchWhere.bHold;\n        if (bHold == true){\n            left_right = TouchWhere.left_right;\n            moveY(left_right);\n        } else {\n            // character.Animator.setInt(\"mode\", 0);\n            // animator.SetInt(\"mode\", 0);\n            animator.SetInteger(\"mode\", 0);\n        }\n    }\n    /**\n     * 角色移動\n     * @param  {[type]} _whichSide [description]\n     * @return {[type]}            [description]\n     */\n    int moveY(string _whichSide){\n        if (_whichSide == \"left\"){\n            transform.position += Vector3.left*Time.deltaTime*2;\n            animator.SetInteger(\"mode\", 1);\n        } else if (_whichSide == \"right\"){\n            transform.position += Vector3.right*Time.deltaTime*2;\n            animator.SetInteger(\"mode\", -1);\n        }\n        return 0;\n    }\n\n}\n",
+			"file": "Assets/script/CharacterMove.cs",
+			"file_size": 1415,
+			"file_write_time": 131626694201464168,
 			"settings":
 			{
-				"buffer_size": 188,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "using UnityEngine;\nusing System.Collections;\nusing UnityEngine.SceneManagement;\npublic class gamestart : MonoBehaviour {\n    public string Data;\n    public GameObject DataLoad;\n    // public Ga meLoad gameload;\n    void Start()\n    {\n        StartCoroutine(LoadYourAsyncScene());\n    }\n\n    IEnumerator LoadYourAsyncScene()\n    {\n        // The Application loads the Scene in the background at the same time as the current Scene.\n        //This is particularly good for creating loading screens. You could also load the scene by build //number.\n        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(\"classroom\");\n        //等待載入\n        while (!asyncLoad.isDone)\n        {\n            yield return null;\n        }\n    }\n    IEnumerator LoadYourAsyncScene2()\n    {\n        // The Application loads the Scene in the background at the same time as the current Scene.\n        //This is particularly good for creating loading screens. You could also load the scene by build //number.\n        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(\"selectmenu\");\n\n        //等待載入\n        while (!asyncLoad.isDone)\n        {\n            yield return null;\n        }\n    }\n}\n",
-			"file": "Assets/menu/gamestart.cs",
-			"file_size": 1189,
-			"file_write_time": 131587819159601823,
-			"settings":
-			{
-				"buffer_size": 1174,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/stage/yishuan/knifeblock.cs",
-			"settings":
-			{
-				"buffer_size": 827,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/stage/yishuan/trashdis.cs",
-			"settings":
-			{
-				"buffer_size": 821,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/stage/whichweapon.cs",
-			"settings":
-			{
-				"buffer_size": 265,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/stage/yishuan/lockblock.cs",
-			"settings":
-			{
-				"buffer_size": 679,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/stage/yishuan/shoottothrid.cs",
-			"settings":
-			{
-				"buffer_size": 817,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/stage/classroom/chairmove.cs",
-			"settings":
-			{
-				"buffer_size": 769,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Unix"
+				"buffer_size": 1351,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -167,32 +104,23 @@
 			{
 				"buffer_size": 1631,
 				"encoding": "UTF-8 with BOM",
-				"line_ending": "Unix"
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Assets/stage/stageleave.cs",
+			"file": "Assets/script/TouchWhere.cs",
 			"settings":
 			{
-				"buffer_size": 1002,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Unix"
+				"buffer_size": 3424,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Assets/stage/yishuan/moviecamera.cs",
+			"file": "Assets/script/Jumptoanother.cs",
 			"settings":
 			{
-				"buffer_size": 744,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/stage/packcontrol.cs",
-			"settings":
-			{
-				"buffer_size": 283,
+				"buffer_size": 480,
 				"encoding": "UTF-8 with BOM",
 				"line_ending": "Unix"
 			}
@@ -203,55 +131,7 @@
 			{
 				"buffer_size": 742,
 				"encoding": "UTF-8 with BOM",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "using UnityEngine;\nusing System.Collections;\nusing UnityEngine.SceneManagement;\npublic class touchAndGo : MonoBehaviour {\n\n    public GameObject charaterSoul;\n    public Transform charaterTransform;\n    public Transform thisTrans;\n    public string gotowhere;\n\n    void Awake() {\n        charaterTransform = charaterSoul.GetComponent<Transform>();\n        thisTrans = GetComponent<Transform>();\n    }\n    void OnMouseUp() {\n        if((thisTrans.position.x + 1 ) > charaterTransform .position.x && (thisTrans.position.x - 1 ) < charaterTransform.position.x) {\n            if((thisTrans.position.y + 0.6 ) > charaterTransform.position.y && (thisTrans.position.y - 0.6 ) < charaterTransform.position.y) {\n                StartCoroutine(LoadYourAsyncScene());\n            }\n        }\n    }\n\n    IEnumerator LoadYourAsyncScene()\n    {\n        // The Application loads the Scene in the background at the same time as the current Scene.\n        //This is particularly good for creating loading screens. You could also load the scene by build //number.\n        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(gotowhere);\n\n        //等待載入\n        while (!asyncLoad.isDone)\n        {\n            yield return null;\n        }\n    }\n}\n",
-			"file": "Assets/stage/touchAndGo.cs",
-			"file_size": 1240,
-			"file_write_time": 131595601049486419,
-			"settings":
-			{
-				"buffer_size": 1230,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/gamekernel/gameremember.txt",
-			"settings":
-			{
-				"buffer_size": 51,
-				"encoding": "UTF-8 with BOM",
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/gamekernel/GameLoad.cs",
-			"settings":
-			{
-				"buffer_size": 1303,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/stage/gotoselect.cs",
-			"settings":
-			{
-				"buffer_size": 645,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/script/TouchWhere.cs",
-			"settings":
-			{
-				"buffer_size": 3423,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
 			}
 		}
 	],
@@ -262,7 +142,7 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 273.0,
+		"height": 228.0,
 		"last_filter": "install",
 		"selected_items":
 		[
@@ -291,7 +171,7 @@
 				"Install Package Control"
 			]
 		],
-		"width": 435.0
+		"width": 496.0
 	},
 	"console":
 	{
@@ -311,13 +191,32 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Users/SONY/Documents/nc2o3/Assets",
-		"/C/Users/SONY/Documents/nc2o3/Assets/gamekernel",
-		"/C/Users/SONY/Documents/nc2o3/Assets/script",
-		"/C/Users/SONY/Documents/nc2o3/Assets/stage"
+		"/C/Users/andyt/Documents/nc2o3/Assets",
+		"/C/Users/andyt/Documents/nc2o3/Assets/stage",
+		"/C/Users/andyt/Documents/nc2o3/Assets/stage/classroom",
+		"/C/Users/andyt/Documents/nc2o3/Assets/stage/yishuan"
 	],
 	"file_history":
 	[
+		"/C/Users/andyt/Documents/nc2o3/Assets/script/TouchWhere.cs",
+		"/C/Users/andyt/AppData/Roaming/Sublime Text 3/Packages/User/OmniSharpSublime.sublime-settings",
+		"/C/Users/andyt/Documents/nc2o3/Assets/stage/gotoselect.cs",
+		"/C/Users/andyt/Documents/nc2o3/Assets/gamekernel/GameLoad.cs",
+		"/C/Users/andyt/Documents/nc2o3/Assets/stage/whichweapon.cs",
+		"/C/Users/andyt/Documents/nc2o3/Assets/stage/yishuan/knifeblock.cs",
+		"/C/Users/andyt/Documents/nc2o3/Assets/menu/gamestart.cs",
+		"/C/Users/andyt/Documents/nc2o3/Assets/menu/quitgame.cs",
+		"/C/Users/andyt/Documents/nc2o3/Assets/stage/yishuan/trashdis.cs",
+		"/C/Users/andyt/Documents/nc2o3/Assets/stage/yishuan/lockblock.cs",
+		"/C/Users/andyt/Documents/nc2o3/Assets/stage/yishuan/shoottothrid.cs",
+		"/C/Users/andyt/Documents/nc2o3/Assets/stage/classroom/chairmove.cs",
+		"/C/Users/andyt/Documents/nc2o3/Assets/stage/noteup.cs",
+		"/C/Users/andyt/Documents/nc2o3/Assets/stage/stageleave.cs",
+		"/C/Users/andyt/Documents/nc2o3/Assets/stage/yishuan/moviecamera.cs",
+		"/C/Users/andyt/Documents/nc2o3/Assets/stage/packcontrol.cs",
+		"/C/Users/andyt/Documents/nc2o3/Assets/gamekernel/gameremember.txt",
+		"/C/Users/andyt/Documents/nc2o3/Assets/menu/gotoaryu.cs",
+		"/C/Users/andyt/Documents/nc2o3/Assets/stage/touchAndGo.cs",
 		"/C/Users/SONY/Documents/nc2o3/Assets/stage/packcontrol.cs",
 		"/C/Users/SONY/Documents/nc2o3/Assets/menu/gotourl.cs",
 		"/C/Users/SONY/Documents/nc2o3/Assets/menu/backtomenu.cs",
@@ -334,7 +233,7 @@
 	],
 	"find":
 	{
-		"height": 70.0
+		"height": 25.0
 	},
 	"find_in_files":
 	{
@@ -368,241 +267,41 @@
 	"groups":
 	[
 		{
-			"selected": 13,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Assets/menu/quitgame.cs",
+					"file": "Assets/script/CharacterMove.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 188,
+						"buffer_size": 1351,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								153,
-								153
+								1062,
+								1063
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "Assets/menu/gamestart.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1174,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								194,
-								194
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Assets/stage/yishuan/knifeblock.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 827,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								824,
-								824
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "Assets/stage/yishuan/trashdis.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 821,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								421,
-								421
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 16,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "Assets/stage/whichweapon.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 265,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								104,
-								116
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Assets/stage/yishuan/lockblock.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 679,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								675,
-								87
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "Assets/stage/yishuan/shoottothrid.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 817,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								455,
-								278
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "Assets/stage/classroom/chairmove.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 769,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								477,
-								477
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 25.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 1,
 					"file": "Assets/stage/noteup.cs",
 					"semi_transient": false,
 					"settings":
@@ -614,100 +313,15 @@
 						"selection":
 						[
 							[
-								1396,
-								1407
+								1110,
+								1110
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 216.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "Assets/stage/stageleave.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1002,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								163,
-								88
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "Assets/stage/yishuan/moviecamera.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 744,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								267,
-								183
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "Assets/stage/packcontrol.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 283,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								204,
-								204
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -717,7 +331,81 @@
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 2,
+					"file": "Assets/script/TouchWhere.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3424,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2392,
+								2392
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"126,130": "'over' should start with an upper case letter. (Rule 'Enum Members')",
+								"19,24": "Using directive is not used by code and can be removed safely.",
+								"1942,1949": "Use 'var' keyword",
+								"2152,2162": "no known errors.",
+								"321,331": "Name should have prefix '_'. (Rule 'Fields').",
+								"349,354": "Name should have prefix '_'. (Rule 'Fields').",
+								"357,362": "Initializing field by default value is redundant",
+								"76,83": "This class is recommended to be defined as static"
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 990.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Assets/script/Jumptoanother.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 480,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								471,
+								471
+							]
+						],
+						"settings":
+						{
+							"oops":
+							{
+								"429,430": "Too many characters in character literal"
+							},
+							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "Assets/menu/gotoaryu.cs",
 					"semi_transient": false,
 					"settings":
@@ -729,149 +417,8 @@
 						"selection":
 						[
 							[
-								79,
-								45
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "Assets/stage/touchAndGo.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1230,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								483,
-								483
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "Assets/gamekernel/gameremember.txt",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 51,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								14,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 15,
-					"file": "Assets/gamekernel/GameLoad.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1303,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3,
-								1303
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage",
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "Assets/stage/gotoselect.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 645,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								642,
-								124
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Unity3D/UnityC#.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 17,
-					"file": "Assets/script/TouchWhere.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3423,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								623,
+								630
 							]
 						],
 						"settings":
@@ -881,10 +428,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 702.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -892,7 +439,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 25.0
 	},
 	"input":
 	{
@@ -921,15 +468,23 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 120.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
+	},
+	"output.variable_get":
+	{
+		"height": 166.0
 	},
 	"pinned_build_system": "",
 	"project": "nc2o3.sublime-project",
 	"replace":
 	{
-		"height": 114.0
+		"height": 46.0
 	},
 	"save_all_on_build": true,
 	"select_file":

@@ -83,9 +83,9 @@ public class TouchWhere : MonoBehaviour {
          * @param  {Vector} _vTouchPos.x > 650 大於650是右邊
          * @return {0}
          */
-        if (Mathf.Abs(_vTouchPos.x) < 384){
+        if (Mathf.Abs(_vTouchPos.x) < 768){
             left_right = ("left");
-        } else if (Mathf.Abs(_vTouchPos.x) > 896){
+        } else if (Mathf.Abs(_vTouchPos.x) > 1152){
             left_right = ("right");
         } else{
             left_right = ("middle");

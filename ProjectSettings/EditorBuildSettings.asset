@@ -7,11 +7,19 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/menu/menu.unity
+    guid: 2444b657efe80904e8047042c5b9bb8e
   - enabled: 1
     path: Assets/gamekernel/mainScene.unity
+    guid: cb325585836238a4192e47814804c0de
   - enabled: 1
     path: Assets/stage/classroom.unity
+    guid: a7957e27e93760c468dbfb014d8550e5
   - enabled: 1
     path: Assets/stage/yishuan.unity
+    guid: 4bd489d9f846c04438961ce02e23f85a
   - enabled: 1
     path: Assets/menu/selectmenu.unity
+    guid: d5b852703377dfa4781eb93ab0e3d921
+  - enabled: 1
+    path: Assets/stage/nahan.unity
+    guid: 1255eb83a9e5cda419ef6695e0b30cc8
