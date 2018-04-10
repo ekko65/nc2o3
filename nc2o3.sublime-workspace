@@ -117,6 +117,14 @@
 			}
 		},
 		{
+			"file": "nc2o3.sublime-project",
+			"settings":
+			{
+				"buffer_size": 169,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "Assets/script/Jumptoanother.cs",
 			"settings":
 			{
@@ -192,9 +200,7 @@
 	"expanded_folders":
 	[
 		"/C/Users/andyt/Documents/nc2o3/Assets",
-		"/C/Users/andyt/Documents/nc2o3/Assets/stage",
-		"/C/Users/andyt/Documents/nc2o3/Assets/stage/classroom",
-		"/C/Users/andyt/Documents/nc2o3/Assets/stage/yishuan"
+		"/C/Users/andyt/Documents/nc2o3/Assets/charater"
 	],
 	"file_history":
 	[
@@ -267,7 +273,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -297,7 +303,7 @@
 						"translation.y": 25.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -327,7 +333,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -368,11 +374,40 @@
 						"translation.y": 990.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
+					"file": "nc2o3.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								134,
+								134
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (Sublime).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "Assets/script/Jumptoanother.cs",
 					"semi_transient": false,
 					"settings":
@@ -401,11 +436,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "Assets/menu/gotoaryu.cs",
 					"semi_transient": false,
 					"settings":
@@ -431,7 +466,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
