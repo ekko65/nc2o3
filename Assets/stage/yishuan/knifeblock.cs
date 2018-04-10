@@ -1,28 +1,35 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class knifeblock : MonoBehaviour {
+public class knifeblock : MonoBehaviour
+{
 
     public GameObject charaterSoul;
     public GameObject cometrueObject;
-    public Transform transform;
+    public Transform charaterTransform;
     public float overx;
     public float overy;
     public float x;
     public float y;
     public bool once;
-    void Awake() {
-        transform = charaterSoul.GetComponent<Transform>();
+    void Awake()
+    {
+        charaterTransform = charaterSoul.GetComponent<Transform>();
         cometrueObject.SetActive(false);
         once = true;
     }
-    void Update() {
-        x = transform.position.x;
-        y = transform.position.y;
-        if(transform.position.y < (overy  - 0.2) && transform.position.y > (overy - 2)) {
-            if(transform.position.x < overx){
+    void Update()
+    {
+        x = charaterTransform.position.x;
+        y = charaterTransform.position.y;
+        if (charaterTransform.position.y < (overy - 0.2) && charaterTransform.position.y > (overy - 2))
+        {
+            if (charaterTransform.position.x < overx)
+            {
                 cometrueObject.SetActive(false);
-            } else {
+            }
+            else
+            {
                 cometrueObject.SetActive(true);
             }
         }

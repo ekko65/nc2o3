@@ -1,0 +1,28 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/*.meta": true,
+        "**/**/*.meta": true,
+        "**/**/*.dill": true,
+        "**/**/*.anim": true,
+        "**/**/*.controller": true,
+        "**/**/*.physicMaterial": true,
+        "**/*.*.meta": true,
+        "**/*.unity": true,
+        "**/*.unityproj": true,
+        "**/*.mat": true,
+        "**/*.fbx": true,
+        "**/*.FBX": true,
+        "**/*.tga": true,
+        "**/*.cubemap": true,
+        "**/*.prefab": true,
+        "**/Library": true,
+        "**/ProjectSettings": true,
+        "**/Temp": true,
+        "**/nc2o3_Data": true,
+        "**/obj": true,
+        "**/UnityPackageManager": true
+    },
+    "editor.formatOnSave": true
+}
